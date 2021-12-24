@@ -252,6 +252,10 @@ namespace
     {
         // This will not fail since we make sure udevMonitor is valid
         int monitorFd = udev_monitor_get_fd(udevMonitor);
+        
+        // Prevent crash with too many file descriptors 
+        if (monitorFd > FD_SETSIZE) 
+             return false;
 
         fd_set descriptorSet;
         FD_ZERO(&descriptorSet);
