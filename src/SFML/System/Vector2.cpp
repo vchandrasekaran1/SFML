@@ -131,8 +131,9 @@ float dot(vector<int> v1, vector<int> v2) {
     return result;
 }
 
-//method to find the cross product of two vectors
-vector<int> cross(vector<int> v1, vector<int> v2) { //since its a 2D vector, you already know the number of values that the result vector will have
+///////////////////////////////////////////////////////////
+    
+vector<int> cross(vector<int> v1, vector<int> v2) { 
     vector<int> result;
 
     result.push_back(v1.at(1) * v2.at(2) - v1.at(2) * v2.at(1));
@@ -141,21 +142,6 @@ vector<int> cross(vector<int> v1, vector<int> v2) { //since its a 2D vector, you
 
     return result;
 }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 ////////////////////////////////////////////////////////////
 Vector2f cwiseProduct(const Vector2f& lhs, const Vector2f& rhs)
