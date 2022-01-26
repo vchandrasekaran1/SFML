@@ -123,6 +123,15 @@ Vector2f projectedVector(const Vector2f& vector, const Vector2f& axis)
 ////////////////////////////////////////////////////////////
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
 float dot(vector<int> v1, vector<int> v2) {
     float result = 0;
     for (int i = 0; i < v2.size(); i++) { //assuming that both v1 and v2 are the same size
